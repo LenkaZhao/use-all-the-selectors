@@ -1,5 +1,10 @@
 html {
+  box-sizing: border-box;
   background-color: #fdf6e3;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 header, footer {
@@ -18,7 +23,7 @@ nav ul {
   background-color: #eee8d5;
 }
 
-#contents , #favs , #facts, #types {
+#contents, #favs, #facts, #types {
   color: #93a1a1;
 }
 
@@ -30,16 +35,30 @@ nav ul {
   color: #fff;
 }
 
-
+a:nth-of-type(no-highlight) {
+  background-color: #719e07;
+}
 
 [rel="external"] {
   background-color: #2694d8;
 }
 
-ol li: first-child {
+ol li:first-child {
   color: #719e47;
 }
 
-li: last-child {
-  #2aa198;
+ol li:last-child {
+  color: #2aa198;
+}
+
+.types li:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+.types li:nth-child(even) {
+  background-color: #586e75;
+}
+
+.types li:nth-child(3) {
+  background-color: #d04b16;
 }
